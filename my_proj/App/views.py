@@ -2,6 +2,13 @@ from django.shortcuts import render
 from App.models import ContactForm
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+
+
+# Home Page
+def index(request):
+    return render(request,'App/Welcome.html')
+
+
  
 #Contact Page View
 def contact(request):
